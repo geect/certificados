@@ -455,9 +455,6 @@
 
           if (resultCard === null) {
             showError("CPF encontrado, mas não há certificados disponíveis para download no momento.");
-          } else {
-            showSuccess(`Encontrados ${result.data.filter(item => item.temCertificado).length} certificado(s) disponível(eis)!`);
-            resultsContainer.innerHTML = resultCard;
           }
 
         } catch (error) {
