@@ -455,6 +455,8 @@
 
           if (resultCard === null) {
             showError("CPF encontrado, mas não há certificados disponíveis para download no momento.");
+          } else {
+            resultsContainer.innerHTML = resultCard;
           }
 
         } catch (error) {
